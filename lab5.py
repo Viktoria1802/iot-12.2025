@@ -126,7 +126,7 @@ class Dinner:
         for candy in self.candies:
             print(candy)
 
-    def findTheMostExpensiveCandies(self):
+    def findthemostexpensivecandies(self):
         sorted_candies = sorted(self.candies, key=lambda c: c.price, reverse=True)
         return sorted_candies[:3]
 
@@ -148,7 +148,7 @@ def main():
     
     print(candy2.ate())
     
-    expensive_candies = dinner.findTheMostExpensiveCandies()
+    expensive_candies = dinner.findthemostexpensivecandies()
     print("\nTop 3 most expensive candies:")
     for candy in expensive_candies:
         print(candy)
